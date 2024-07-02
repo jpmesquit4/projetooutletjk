@@ -3,3 +3,306 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: #EBEBEB;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: black;
+    height: 100px;
+    padding: 0 20px;
+
+    input {
+        width: 700px;
+        height: 40px;
+        outline: none;
+        border: none;
+        padding: 0 15px;
+        border-radius: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        color: #adadad;
+    }
+
+    .icons-cabecalho {
+        img {
+            padding: 0 10px;
+        }
+    }
+
+}
+
+.pagina-home {
+    display: flex;
+    flex-direction: column;
+
+    .sub-cabecalho {
+        display: flex;
+        align-items: center;
+
+        height: 70px;
+        padding-left: 45px;
+        background-color: #FCFCFC;
+
+        a {
+            padding-right: 20px;
+            text-decoration: none;
+
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            color: black;
+        }
+    }
+
+    .container {
+        overflow: hidden;
+        .sliding-background {
+            display: flex;
+            flex-direction: row;
+            width: 2880px;
+            animation: slide 10s ease-in-out infinite;
+
+            div {
+                height: 533px;
+                width: 1440px; 
+            }
+    
+            @keyframes slide{
+                0% {
+                  transform: translate3d(0, 0, 0);
+                }
+                50% {
+                  transform: translate3d(-1250px, 0, 0);
+                }
+                100% {
+                    
+                }
+              }
+        }
+    }
+
+    .colecoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 40px;
+        
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: rgb(151,11,16);
+            background: linear-gradient(338deg, rgba(151,11,16,1) 27%, rgba(229,103,107,1) 100%);
+            transition: .5s;
+            cursor: pointer;
+        }
+
+        div:hover {
+            transform: scale(1.04);
+        }
+    }
+
+    
+
+    .title {
+        align-self: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        font-size: 30px;
+        text-transform: uppercase;
+        margin: 80px 0 40px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 150px;
+
+        .card-principal {
+            background-color: white;
+            padding: 10px;
+
+            > p {
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+            }
+            > h1 {
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 800;
+                font-size: 16px;
+                margin-top: 10px;
+            }
+            
+            .card-meio {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #B1B1B1;
+                padding: 20px;
+
+                div {
+                    display: flex;
+                    justify-content: end;
+                    width: 100%;
+
+                    i {
+                        position: relative;
+                        bottom: 15px;
+                        left: 15px;
+                    }
+                }
+
+                span {
+                    position: absolute;
+                    p {
+                        position: relative;
+                        top: 100px;
+                        left: 130px;
+
+                        background-color: green;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 700;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        padding: 7px 15px;
+                        border-radius: 5px;
+                        color: white;
+                        letter-spacing: 1.5px;
+                        
+                        
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .bannerNovidades {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 160px 0;
+
+
+        .icon-flecha {
+            background-color: white;
+            border-radius: 50px;
+            cursor: pointer;
+            
+        }
+
+        .icon-flecha:hover {
+            transform: scale(1.04);
+        }
+        .icon-flecha:active {
+            transform: scale(1.0);
+        }
+
+        .mySlides {
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+        background-color: #1A191A;
+        padding: 120px 0;
+    }
+    
+    footer div {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer div h1 {
+        color: white;
+        font-family: "League Spartan", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        letter-spacing: -1px;
+    }
+    
+    footer div p {
+        color: white;
+        font-family: "League Spartan", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    
+    footer > div > h3 {
+        color: white;
+        font-family: "League Spartan", sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    
+    footer > div > a {
+        color: white;
+        font-family: "League Spartan", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        text-decoration: none;
+        margin-top: 15px;
+    }
+    
+    footer > div > a:hover {
+        color: #FF4848;
+        transition: 0.3s;
+        
+    }
+    
+    .newsletter {
+        gap: 15px;
+    }
+    
+    .newsletter form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #32363B;
+        padding: 2px 0 2px 25px;
+        border-radius: 50px;
+    }
+    
+    .newsletter > form > button {
+        background-color: #FF4848;
+        padding: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: none;
+    }
+    
+    .newsletter > form > input {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: #666;
+        font-family: "League Spartan", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        
+    }
+
+    
+}
