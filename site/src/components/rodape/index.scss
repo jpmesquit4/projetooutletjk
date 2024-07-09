@@ -1,0 +1,83 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    background-color: #1A191A;
+    padding: 120px 0;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div h1 {
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+
+footer div p {
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+footer > div > h3 {
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+footer > div > a {
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+footer > div > a:hover {
+    color: #FF4848;
+    transition: 0.3s;
+    
+}
+
+.newsletter {
+    gap: 15px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #32363B;
+    padding: 2px 0 2px 25px;
+    border-radius: 50px;
+}
+
+.newsletter > form > button {
+    background-color: #FF4848;
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+.newsletter > form > input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #666;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    
+}
