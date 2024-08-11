@@ -1,4 +1,5 @@
 import "./index.scss";
+import { Link } from 'react-router-dom'
 
 function CabecalhoESub() {
   
@@ -18,10 +19,12 @@ function CabecalhoESub() {
         
       </header>
       <div className='sub-cabecalho'>
-          <a href="">Início</a>
+        
+          <a href="/">Início</a>
           <a href="">Produtos</a>
           <a href="">Contato</a>
-          <a href="">Quem somos</a>
+          <a href="/sobrennos">Quem somos</a>
+       
       </div>
     </div>
   )

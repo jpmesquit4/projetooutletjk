@@ -45,7 +45,7 @@ function Home() {
       
     <CabecalhoESub />
       
-      <div className="container" >
+      <div className="container">
 
         <div className="sliding-background">
           <div style={{ 

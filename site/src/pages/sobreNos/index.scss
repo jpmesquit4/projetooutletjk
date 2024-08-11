@@ -1,0 +1,37 @@
+.pagina-SobreNos {
+
+    .cabecalho-alternativo {
+        padding: 30px;
+        background-color: #D9D9D9;
+
+        h1 {
+            color: #787878;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 800;
+            font-size: 30px;
+            margin: 0;
+        }
+        
+    }
+
+    .sobre {
+        padding: 100px 30px 100px 30px;
+
+        h1 {
+            font-family: "Poppins";
+            color: #2a2a2a;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 30px;
+        }
+
+        p {
+            font-family: "Poppins";
+            color: #2a2a2a;
+            font-weight: 500;
+            font-size: 16px;
+            width: 793px;
+            margin-top: 10px;
+        }
+    }
+}
