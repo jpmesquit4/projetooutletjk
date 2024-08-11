@@ -1,0 +1,110 @@
+.pagina-LoginCliente {
+
+    .fundo {
+        width: 100vw;
+        height: 100vh;
+ 
+
+        .fundopreto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.555);
+            width: 100vw;
+            height: 100vh;
+
+            #vermelha {
+                width: 150px;
+                height: 150px;
+                background-color: red;
+                border-radius: 100%;
+                position: relative;
+                left: 50px;
+                z-index: 1;
+            }
+
+            .menu-login {
+                display: flex;
+                flex-direction: row;
+                width: 60%;
+                border: 2px solid white;
+                border-radius: 10px;
+                height: 80%;
+                
+
+                .quadrado {
+                    width: 60%;
+                    border-radius: 7px 0px 0px 7px;
+                }
+
+                .login {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 40%;
+                    background-color: #d3d3d3;
+                    padding: 20px;
+                    border-radius: 0 7px 7px 0;
+
+                    h1 {
+                        font-family: "Montserrat";
+                        font-size: 28px;
+                        font-weight: 800;
+                        color: black;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-family: "Montserrat";
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #464646;
+                    }
+
+                    img {
+                        margin: 20px 0;
+                    }
+
+                    input {
+                        border: none;
+                        outline: none;
+
+                        margin-bottom: 15px;
+                        border-radius: 50px;
+                        height: 40px;
+                        width: 70%;
+                        background-color: #e3e3e3;
+
+                        color: #838383;
+                        font-family: "Montserrat";
+                        font-weight: 700;
+                        font-size: 12px;
+                        padding: 0 20px;
+
+                    }
+
+                    button {
+                        border: none;
+                        outline: none;
+
+                        margin-bottom: 15px;
+                        border-radius: 50px;
+                        height: 40px;
+                        width: 50%;
+                        background-color: #222;
+
+                        color: #fff;
+                        font-family: "Montserrat";
+                        font-weight: 500;
+                        font-size: 10px;
+                        letter-spacing: 2px;
+                        padding: 0 20px;
+                    }
+
+                    
+                }
+            }
+
+        }
+    }
+}

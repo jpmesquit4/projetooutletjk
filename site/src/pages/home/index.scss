@@ -14,11 +14,12 @@ body {
     display: flex;
     flex-direction: column;
 
+    overflow: hidden;
     
-
     .container {
-        overflow: hidden;
+
         .sliding-background {
+            
             display: flex;
             flex-direction: row;
             width: 2880px;
@@ -31,13 +32,13 @@ body {
     
             @keyframes slide{
                 0% {
-                  transform: translate3d(0, 0, 0);
+                  transform: translate3d(-160px, 0, 0);
                 }
                 50% {
-                  transform: translate3d(-1250px, 0, 0);
+                  transform: translate3d(-1440px, 0, 0);
                 }
                 100% {
-                    
+                    transform: translate3d(-160px, 0, 0);
                 }
               }
         }
